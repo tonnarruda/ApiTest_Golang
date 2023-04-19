@@ -26,6 +26,6 @@ func TestGetAllBookingById(t *testing.T) {
 
 	api.Client.Get(endpoint).
 		Expect(t).
-		Status(418).
+		Status(404).
 		Done()
 }
